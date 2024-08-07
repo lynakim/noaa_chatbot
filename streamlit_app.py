@@ -12,7 +12,7 @@ if "messages" not in st.session_state.keys():  # Initialize the chat messages hi
     st.session_state.messages = [
         {
             "role": "assistant",
-            "content": "Ask me a question about the AWIPS Software System Design Description, linked at https://vlab.noaa.gov/web/awips-technical-library/document-library?p_p_id=com_liferay_document_library_web_portlet_DLPortlet&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_com_liferay_document_library_web_portlet_DLPortlet_mvcRenderCommandName=/document_library/view_file_entry&_com_liferay_document_library_web_portlet_DLPortlet_redirect=https://vlab.noaa.gov:443/web/awips-technical-library/document-library?p_p_id%3Dcom_liferay_document_library_web_portlet_DLPortlet%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26_com_liferay_document_library_web_portlet_DLPortlet_mvcRenderCommandName%3D%252Fdocument_library%252Fview_folder%26_com_liferay_document_library_web_portlet_DLPortlet_folderId%3D22933652&_com_liferay_document_library_web_portlet_DLPortlet_fileEntryId=22933514!",
+            "content": "Ask me a question about the AWIPS Software System Design Description!",
         }
     ]
 
@@ -24,10 +24,10 @@ def load_data():
         model="gpt-3.5-turbo",
         temperature=0.2,
         system_prompt="""You are an expert on 
-        the Streamlit Python library and your 
+        the NOAA AWIPS and your 
         job is to answer technical questions. 
         Assume that all questions are related 
-        to the Streamlit Python library. Keep 
+        to NOAA or AWIPS. Keep 
         your answers technical and based on 
         facts – do not hallucinate features.""",
     )
